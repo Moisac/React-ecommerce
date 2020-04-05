@@ -6,7 +6,7 @@ import {UpOutlined, FacebookOutlined, InstagramOutlined, TwitterOutlined, Youtub
 export const MainFooter = () => {
     return (
         <div className="footer">
-            <Row gutter={32}>
+            <Row gutter={32} justify="center">
                 <Col  md={8} sm={25} xs={24}>
                 <h3>About us</h3>
                 <p>The fashion and retail industry tends to be overly youth focused. However, by closely following generational fashion trends as well as our own customers’ purchasing preferences, we will tailor our inventory to meet the specific needs of our clientele.</p>

@@ -9,6 +9,11 @@ html {
 /*Header*/
 .ant-layout-header {
   background: $secondaryColor!important;
+  .ant-row {
+    .ant-col {
+      text-align: center;
+    }
+  }
   //Logo
     #logo {
       max-width: 160px;
@@ -18,15 +23,22 @@ html {
   //Menu
   .ant-menu {
     background: transparent!important;
-    ul {
-      padding: 0;
-      display: flex;
-      list-style: none;
-      li {
-        padding: 0 15px;
-        a {
-          color: $textColor;
-        }
+    border-bottom: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+      padding: 0 15px;
+      a {
+        color: $textColor;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+    .ant-menu-item-selected {
+      a {
+        font-size: 18px;
       }
     }
   }
@@ -36,6 +48,7 @@ html {
   .header-icons {
     list-style: none;
     display: flex;
+    justify-content: center;
     li {
       padding: 0 10px;
       height: 45px;
@@ -106,13 +119,13 @@ html {
       }
     }
     .first-slide {
-      background-image: url(./images/general/slide1.jpg);
-    }
-    .second-slide {
       background-image: url(./images/general/slide2.jpg);
     }
-    .third-slide {
+    .second-slide {
       background-image: url(./images/general/slide3.jpg);
+    }
+    .third-slide {
+      background-image: url(./images/general/slide1.jpg);
     }
   }
 }
@@ -445,6 +458,17 @@ html {
 
 /*Footer*/
 .footer {
+  .ant-row {
+    .ant-col {
+      text-align: center;
+      p {
+        text-align: justify;
+      }
+      h4 {
+        text-align: left;
+      }
+    }
+  }
   .social {
     .anticon{
       font-size: 25px;
@@ -454,10 +478,14 @@ html {
   .footer-logo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     img {
       width: 100%;
       max-width: 100px;
+      height: 60px;
       flex: 0 25%;
+      margin-top: 15px;
     }
   }
 }

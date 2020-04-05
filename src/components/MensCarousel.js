@@ -47,7 +47,7 @@ export const MensCarousel = (props) => {
             {context => (
             <React.Fragment>
                 <main className="mens container">
-                <Divider orientation="right">Mens</Divider>
+                <Divider orientation="right">Men</Divider>
                     <Slider {...settings}>
                         {context.products.map(product => (
                             product.category === 'Mens' ? 

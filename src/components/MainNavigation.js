@@ -19,7 +19,7 @@ export const MainNavigation = props => {
   return (
     <React.Fragment>
       <div className="header-content">
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justiify="center" align="middle">
+        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center">
 
           <Col className="gutter-row" md={6} sm={10} xs={10}>
           <NavLink to="/"><img id="logo" src={logo} /></NavLink>
@@ -34,10 +34,10 @@ export const MainNavigation = props => {
                 <NavLink to="/products">All products</NavLink>
               </Menu.Item>
               <Menu.Item>
-                <NavLink to="/products">Womens</NavLink>
+                <NavLink to="/products">Women</NavLink>
               </Menu.Item>
               <Menu.Item>
-                <NavLink to="/products">Mens</NavLink>
+                <NavLink to="/products">Men</NavLink>
               </Menu.Item>
             </Menu>
           </Col>
